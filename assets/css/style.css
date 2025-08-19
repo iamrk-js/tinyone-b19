@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
+.heroImg {
+  background-color: #fcdb00;
+  padding: 60px 0 110px;
+}
+
+.logo {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navbar {
+  text-align: right;
+}
+
+.navbar ul {
+  display: inline-block;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+/* // a is link or a is visited  */
+
+/* .navbar ul li a:link,
+.navbar ul li a:visited{
+  color: #010101;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+} */
+
+.navbar ul li a:is(:link, :visited) {
+  color: #010101;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0px 18px;
+  height: 55px;
+  display: inline-block;
+  line-height: 55px;
+}
+
+.iphoneImg {
+  margin-left: 60px;
+}
+
+.pri-heading {
+  font-size: 32px;
+  color: #010101;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.sec-heading {
+  color: #313841;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.inspiration {
+  padding-top: 75px;
+}
+
+.para {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
+.icon-list li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.icon-list li a:is(:link, :visited) {
+  display: inline-block;
+  color: #010101;
+}
+
+.icon-list li a i {
+  transition: all 0.3s ease-in-out;
+}
+
+/* .icon-list li a i:hover,
+.icon-list li a i:focus,
+.icon-list li a i:active
+{
+  transform: scale(1.2) translateY(-3px);
+  transform: scale(1.2) rotate(360deg);
+} */
+
+.icon-list li a i:is(:hover, :focus, :active) {
+  transform: scale(1.2) rotate(360deg);
+}
+
+/* .icon-list li a:link, 
+.icon-list li a:visited 
+{
+  display: inline-block;
+} */
+
+.features {
+  padding: 115px 0 70px;
+}
+
+.thumbnail {
+  margin-bottom: 90px;
+}
+
+.thumbnail h4 {
+  font-size: 22px;
+  color: #010101;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.thumbnail p {
+  color: #898989;
+  font-size: 16px;
+}
+
+/* contactUs section css  */
+
+.contactUs {
+  background-color: #010101;
+  padding: 90px 0 140px;
+}
+
+/* .contactUs .pri-heading{
+  color: #fcdb00;
+} */
+
+.form-group {
+  margin-bottom: 80px;
+}
+
+.email,
+.btn {
+  height: 50px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #fcdb00;
+  cursor: pointer;
+  width: 125px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #fcdb00;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.email {
+  width: calc(100% - 150px);
+  border: 1px solid #fff;
+  outline: none;
+  padding: 0 25px;
+  color: #898989;
+}
+
+.email::placeholder {
+  color: inherit;
+}
+.contactUs .icon-list li a:is(:link, :visited) {
+  color: #fcdb00;
+}
+.footerLinks li,
+.footerLinks a:is(:link, :visited){
+  color: #fff;
+  text-transform: capitalize;
+}
